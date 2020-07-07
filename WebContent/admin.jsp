@@ -40,7 +40,8 @@
 							    	<span class="caret"></span>
 							    </button> 
 							    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							    	<li id= "tablehighlightspage"><a href="#">Header Image Insert & View </a></li>		    								     	
+							    	<li id= "tablehighlightsinsert"><a href="#">Highlights Insert </a></li>
+							    	<li id= "tablehighlightsview"><a href="#">Highlights View </a></li>			    								     	
 							    </ul>								
 							</div>
  					    </td>
@@ -74,9 +75,8 @@
 <!-- Homepage ............
                         -->
 
-				<div id="Homepage">
-					<div class = "col-lg-9 col-md-9 ">
-						<div id="Home">
+				<div id="Homepage">					
+						
 							<div class="row" id = "headerimage">
 
 								<div class = "col-lg-3" >
@@ -94,13 +94,14 @@
 
 									<h3>Image Database</h3>
 
-									<table>
+									<table class="table table-striped table table-bordered">
 										<tr>
 											<th>Image</th>
+											<th></th>
 										</tr>
 										<tr>
 											<td>.png</td>
-											<td><u>Delete<u></td>
+											<td style="color:red"><a><u>Delete</u></a></td>
 										</tr>
 									</table>
 
@@ -120,25 +121,26 @@
 
 									<h3>Image Database</h3>
 
-									<table>
+									<table class="table table-striped table table-bordered">
 										<tr>
 											<th>Image</th>
+											<th></th>
 										</tr>
 										<tr>
 											<td>1.png</td>
-											<td><u>Delete<u></td>
+											<td style="color:red"><u>Delete</u></td>
 										</tr>
 										<tr>
 											<td>2.png</td>
-											<td><u>Delete<u></td>
+											<td style="color:red"><u>Delete</u></td>
 										</tr>
 										<tr>
 											<td>3.png</td>
-											<td><u>Delete<u></td>
+											<td style="color:red"><u>Delete</u></td>
 										</tr>
 										<tr>
 											<td>4.png</td>
-											<td><u>Delete<u></td>
+											<td style="color:red"><u>Delete</u></td>
 										</tr>
 
 									</table>
@@ -149,9 +151,10 @@
 
 							<div class="row" id = "news">
 								<div class="col-lg-3" >
-									<h3>Insert News here!</h3>								
+									<h3>Insert News</h3>								
 									<form action="/action_page.php">
-								  		<textarea name="message" rows="5" cols="60" placeholder="After typing every news put 5 spaces before another news (Max word limit 100)">
+										<label >Enter Text</label>
+								  		<textarea name="message" rows="5"  placeholder="After typing every news put 5 spaces before another news (Max word limit 100)">
 								  		</textarea>
 								  		<br><br>
 								  		<input type="submit">
@@ -162,23 +165,21 @@
 
 									<h3>News Database</h3>
 
-									<table>
+									<table class="table table-striped table table-bordered">
 										<tr>
 											<th>News</th>
+											<th></th>
 										</tr>
 										<tr>
 											<td>lorem ipsum pipsum lipsum</td>
-											<td><u>Delete<u></td>
+											<td style="color:red"><u>Delete</u></td>
 										</tr>
 									</table>
 
   								</div>
-							</div>
-						
-						</div>
-					</div>
-					
-				</div>	
+							</div>				
+								
+					</div>	
 
 <!-- Highlightpage ............
                         -->	
@@ -186,42 +187,64 @@
 				<div id="Highlightpage">
 
 					<div class="row">						
-						<div class = "col-lg-6" id = "heading1">
+						<div class = "col-lg-9" id = "highlightsinsert">
 
-							<h3>Type Heading 1</h3>
+							<h3>Add Highlight</h3>
 
 							<form action="/action_page.php">
-								<h3>Type Heading 1</h3>
-								<textarea name="message" rows="2" cols="60" placeholder="Heading Here">
+								<label> Heading </label>
+								<textarea name="message" rows="2" cols="60" placeholder="Heading">
 								</textarea>
 								<br><br>
 
-								<h3>Type Paragraph 1</h3>
-								<textarea name="message" rows="2" cols="60" placeholder="Paragraph Here">
+								<label>Description</label>
+								<textarea name="message" rows="2" cols="60" placeholder="Description">
 							    </textarea>
 							    <br><br>
 
-							    <h3>Choose 8 Images</h3>
+							    <label>Choose 8 Images</label>
 							    <label for="myfile">Select files:</label>
   								<input type="file" id="myfile" name="myfile" multiple><br><br>
   								
-  								<h3>Enter Youtube URL</h3>
+  								
   								<label for="exampleInputEmail1">Provide Youtube URL of video</label>
-					  	    	<input type="url" class="form-control" placeholder="URL">
+					  	    	<input type="url" class="form-control" placeholder="Youtube URL">
 
 					  			<label for="exampleInputEmail1">Provide Youtube URL of video</label>
 					  	    	<input type="url" class="form-control" placeholder="URL">
 
-					  	    	<button type="Insert & Create Form" class="btn btn-default">Submit</button>
+					  	    	<button type="submit" class="btn btn-default">Submit</button>
 
 
 							</form>
 
-  						</div>	
-					  						    
-					</div>
-				</div>	
+  						</div>
+  						<div class="row" id="highlightsview"> 						
 
+						<table class="table table-striped table table-bordered ">
+	  			  		    <tr>
+	  			  		    	<th>Heading </th>
+	  			  		    	<th>Description</th>
+	  			  		    	<th>Images</th>
+	  			  		    	<th>Youtube URL 1</th>
+	  			  		    	<th>Youtube URL 2</th>
+	  			  		    	<th></th>
+	  			  		    </tr>
+	  			  		    <tr>
+	  			  		        <td>A</td>
+	  			  		        <td>B</td>
+	  			  		        <td>C</td>
+	  			  		        <td>D</td>
+	  			  		        <td>E</td>
+	  			  		        <td style="color:red"><a><u> Delete </u></a><td>	  			  		        
+	  			  		    </tr>
+ 	  			  		   
+	  			  		</table>
+	  			  		</div>	
+	  			  	</div>
+	  			  </div>
+	  			  	
+                   
 <!-- Events ............
                         -->	
 
@@ -257,12 +280,16 @@
 					  				<label for="exampleInputEmail1">Provide Youtube URL of video</label>
 					  			    <input type="url" class="form-control" placeholder="URL">
 					  			</div>
-					  			<button type="Insert & Create Form" class="btn btn-default" id="myBtn">Submit</button>
+					  			<button  class="btn btn-default" >Submit</button>
 					  		</form>
-
+					  		
+					  		
+					  		
+					  		<button id="myBtn">Registration Form</button>
 					  		<div id="myModal" class="modal">
-
-  							<!-- Modal content -->
+								
+								
+								<!-- Modal content -->
   								<div class="modal-content">
     								<span class="close">&times;</span>
     								<table class="table table-striped table table-bordered ">
@@ -321,11 +348,30 @@
 	  			  		        <td>1</td>
 	  			  		        <td>2</td>
 	  			  		    </tr>
-	  			  		</table>
+	  			  		</table>  
+	  			  		<form>
+	  			  		<div class="col-auto my-1">
+      <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Choose one type</option>
+        <option value="1">A</option>
+        <option value="2">B</option>
+        <option value="3">C</option>
+        <option value="4">D</option>
+        <option value="5">E</option>
+      </select>
+    </div>
+					  			
+					  			
+					      <button  class="btn btn-default" >Submit</button>
+					  	</form>
+	  			  		
+	  			  		
   								</div>
 
 							</div>
 
+					  		
 						</div>
 					</div> 
 
@@ -348,7 +394,7 @@
 	  			  		        <td>D</td>
 	  			  		        <td>E</td>
 	  			  		        <td>F</td>
-	  			  		        <td><a><u> Delete </u></a><td>	  			  		        
+	  			  		        <td style="color:red"><a><u> Delete </u></a><td>	  			  		        
 	  			  		    </tr>
  	  			  		   
 	  			  		</table>
@@ -430,6 +476,7 @@
 	  			  		    	<th>School/College</th>
 	  			  		    	<th>Subject</th>
 	  			  		    	<th>Query</th>
+	  			  		    	<th></th>
 	  			  		    </tr>
 	  			  		    <tr>
 	  			  		        <td>A</td>
@@ -437,7 +484,8 @@
 	  			  		        <td>C</td>
 	  			  		        <td>D</td>
 	  			  		        <td>E</td>
-	  			  		        <td>F</td>	  			  		        
+	  			  		        <td>F</td>	  	
+	  			  		        <td style="color:red"><a>Delete</a></td>		  		        
 	  			  		    </tr>
  	  			  		   
 	  			  		</table>
@@ -458,19 +506,19 @@
 	  			  		    <tr>
 	  			  		        <td>1</td>
 	  			  		        <td>BTS</td>
-	  			  		        <td style="color:blue"><u><a>View</a><u></td>
+	  			  		        <td style="color:blue"><u><a>View</a></u></td>
 	  			  		        <td style="color:red"><u><a>Delete</a></u></td>	  			  		         			  		        
 	  			  		    </tr>
 	  			  		    <tr>
 	  			  		        <td>2</td>
 	  			  		        <td>MUN</td>
-	  			  		        <td style="color:blue"><u><a>View</a><u></td>
+	  			  		        <td style="color:blue"><u><a>View</a></u></td>
 	  			  		        <td style="color:red"><u><a>Delete</a></u></td>	  			  		         			  		        
 	  			  		    </tr>
 	  			  		    <tr>
 	  			  		        <td>3</td>
 	  			  		        <td>BUZZ</td>
-	  			  		        <td style="color:blue"><u><a>View</a><u></td>
+	  			  		        <td style="color:blue"><u><a>View</a></u></td>
 	  			  		        <td style="color:red"><u><a>Delete</a></u></td>	  			  		         			  		        
 	  			  		    </tr> 	  			  		   
 	  			  		</table>				
