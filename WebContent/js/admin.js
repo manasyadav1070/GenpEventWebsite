@@ -129,3 +129,36 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+
+
+
+//Get the modal
+var modalbts = document.getElementById("ModalBTS");
+
+// Get the button that opens the modal
+var btnbts = document.getElementById("myBTS");
+
+// Get the <span> element that closes the modal
+var spanbts = document.getElementsByClassName("close")[1];
+
+// When the user clicks the button, open the modal 
+btnbts.onclick = function() {
+  modalbts.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanbts.onclick = function() {
+  modalbts.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalbts) {
+    modalbts.style.display = "none";
+  }
+}
+
+

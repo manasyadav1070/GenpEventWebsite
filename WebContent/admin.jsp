@@ -284,12 +284,13 @@
 					  		</form>
 					  		
 					  		
-					  		
+		  		
+		  			  		
 					  		<button id="myBtn">Registration Form</button>
 					  		<div id="myModal" class="modal">
 								
 								
-								<!-- Modal content -->
+								
   								<div class="modal-content">
     								<span class="close">&times;</span>
     								<table class="table table-striped table table-bordered ">
@@ -369,7 +370,9 @@
 	  			  		
   								</div>
 
-							</div>
+							</div> 
+							
+							
 
 					  		
 						</div>
@@ -521,7 +524,20 @@
 	  			  		        <td style="color:blue"><u><a>View</a></u></td>
 	  			  		        <td style="color:red"><u><a>Delete</a></u></td>	  			  		         			  		        
 	  			  		    </tr> 	  			  		   
-	  			  		</table>				
+	  			  		</table>	
+	  			  		<button id="myBTS">Open Modal</button>
+
+<!-- The Modal -->
+<div id="ModalBTS" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+  
+</div>
+	  			  					
 				</div>		
 			</div>
 		</div>
