@@ -9,12 +9,14 @@
 <!-- <link rel="stylesheet" href="library2.css"> -->
 <link rel="stylesheet" href="Style/homepage.css">
 <link rel="stylesheet" href="Style/Lib/font-awesome.min.css">
+<link rel="stylesheet" href="Style/Lib/bootstrap.min.css">
 
   
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+<script src="js/Lib/bootstrap.min.js"></script>
 
 <script type="text/javascript">
 function checkContactUsForm(){
@@ -44,7 +46,7 @@ function checkContactUsForm(){
     <div class="ms-right ms-hide-small">
       <a href="#about" class="ms-bar-item ms-button">ABOUT</a>
       <a href="#team" class="ms-bar-item ms-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#pricing" class="ms-bar-item ms-button"><i class="fa fa-music"></i> EVENTS</a>
+      <a href="event.jsp" class="ms-bar-item ms-button"><i class="fa fa-music"></i> EVENTS</a>
       <a href="#contact" class="ms-bar-item ms-button"><i class="fa fa-envelope"></i> CONTACT</a>
       <a href="#contact" class="ms-bar-item ms-button"><i class="fa fa-plus"></i> REGISTER</a>
       <a href="admin_signup.jsp" class="ms-bar-item ms-button"><i class="fa fa-user"></i> ADMIN</a>
@@ -63,7 +65,7 @@ function checkContactUsForm(){
   <a href="javascript:void(0)" onclick="ms_close()" class="ms-bar-item ms-button ms-large ms-padding-16">Close ×</a>
   <a href="#about" onclick="ms_close()" class="ms-bar-item ms-button">ABOUT</a>
   <a href="#team" onclick="ms_close()" class="ms-bar-item ms-button">TEAM</a>
-  <a href="#events" onclick="ms_close()" class="ms-bar-item ms-button">EVENTS</a>
+  <a href="event.jsp" onclick="ms_close()" class="ms-bar-item ms-button">EVENTS</a>
   <a href="#contact" onclick="ms_close()" class="ms-bar-item ms-button">CONTACT</a>
   <a href="#register" onclick="ms_close()" class="ms-bar-item ms-button">REGISTER</a>
   <a href="admin_signup.jsp" onclick="ms_close()" class="ms-bar-item ms-button">ADMIN</a>
@@ -293,10 +295,51 @@ function checkContactUsForm(){
     </div> -->
   
 
-<!-- Pricing Section -->
+<!-- Event Section -->
 
 <div class="ms-container ms-center ms-dark-grey" style="padding:128px 16px" id="pricing">
   <h3>Events</h3>
+  
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1" class></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2" class></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="..." alt="BTS">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="..." alt="MUN">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  
+  <!--  
+  
+  
+  
   <p class="ms-large">Choose a Event that fits your needs.</p>
   <div class="ms-row-padding" style="margin-top:64px">
     <div class="ms-third ms-section">
@@ -365,39 +408,14 @@ function checkContactUsForm(){
         </li>
       </ul>
     </div>
-    <!-- <div class="ms-third">
-      <ul class="ms-ul ms-white ms-hover-shadow">
-        <li class="ms-red ms-xlarge ms-padding-48">Pro</li>
-        <li class="ms-padding-16"><b>25GB</b> Storage</li>
-        <li class="ms-padding-16"><b>25</b> Emails</li>
-        <li class="ms-padding-16"><b>25</b> Domains</li>
-        <li class="ms-padding-16"><b>Endless</b> Support</li>
-        <li class="ms-padding-16">
-          <h2 class="ms-wide">$ 25</h2>
-          <span class="ms-opacity">per month</span>
-        </li>
-        <li class="ms-light-grey ms-padding-24">
-          <button class="ms-button ms-black ms-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="ms-third ms-section">
-      <ul class="ms-ul ms-white ms-hover-shadow">
-        <li class="ms-black ms-xlarge ms-padding-32">Premium</li>
-        <li class="ms-padding-16"><b>50GB</b> Storage</li>
-        <li class="ms-padding-16"><b>50</b> Emails</li>
-        <li class="ms-padding-16"><b>50</b> Domains</li>
-        <li class="ms-padding-16"><b>Endless</b> Support</li>
-        <li class="ms-padding-16">
-          <h2 class="ms-wide">$ 50</h2>
-          <span class="ms-opacity">per month</span>
-        </li>
-        <li class="ms-light-grey ms-padding-24">
-          <button class="ms-button ms-black ms-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div> -->
-  </div>
+    
+  </div> 
+  
+  
+  
+  -->
+  
+  
 </div>
 
 <!-- Contact Section -->

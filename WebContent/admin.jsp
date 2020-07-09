@@ -1,4 +1,8 @@
+<%@page import="Beans.ContactUsBeans" %>
+<%@page import="java.util.List" %>
+<%@page import="java.util.ArrayList" %>
 <!DOCTYPE html>
+
 <html>
 <head>
 	<title>AdminSite</title>
@@ -61,7 +65,7 @@
  					    </td>
  					</tr>
  					<tr>
- 					    <td id="tablecontactus">Contact Us Data</td>
+ 					    <td id="tablecontactus"><a href="ContactUsDetails">Contact Us Data</td>
  					</tr>
  					<tr>
  					    <td id="tableregistrationdata">Registration Data</td>
@@ -473,23 +477,35 @@
 
 					<table class="table table-striped table table-bordered ">
 	  			  		    <tr>
+	  			  		    	<th>Id</th>	
 	  			  		    	<th>Name</th>
-	  			  		    	<th>Phone No.</th>
-	  			  		    	<th>Email Address</th>
-	  			  		    	<th>School/College</th>
+	  			  		    	<th>Email</th>
 	  			  		    	<th>Subject</th>
-	  			  		    	<th>Query</th>
-	  			  		    	<th></th>
+	  			  		    	<th>Message</th>
+	  			  		    	<th>Entry Date</th>
+	  			  		     	<th></th>
 	  			  		    </tr>
-	  			  		    <tr>
-	  			  		        <td>A</td>
-	  			  		        <td>B</td>
-	  			  		        <td>C</td>
-	  			  		        <td>D</td>
-	  			  		        <td>E</td>
-	  			  		        <td>F</td>	  	
-	  			  		        <td style="color:red"><a>Delete</a></td>		  		        
-	  			  		    </tr>
+	  			  		    	  			  		    
+	  			  		    <%
+	  			  		List<ContactUsBeans> contactList = new ArrayList<ContactUsBeans>();
+	  			  		contactList = (ArrayList<ContactUsBeans>) request.getSession().getAttribute("contactList");
+
+	  			  		if(contactList != null && contactList.size()>0) {
+	  			  			for(ContactUsBeans contactBeans : contactList) {
+	  			  				%>
+	  			  				<tr>
+	  			  				<td><%= contactBeans.getId()%></td>
+	  			  				<td><%= contactBeans.getName()%></td>
+	  			  				<td><%= contactBeans.getEmail()%></td>
+	  			  				<td><%= contactBeans.getSubject()%></td>
+	  			  				<td><%= contactBeans.getMessage()%></td>
+	  			  				<td><%= contactBeans.getEntry_date()%></td>
+	  			  				<td style="color:red"><a>Delete</a></td>
+	  			  				</tr>
+	  			  				<%
+	  			  			}	
+	  			  		}
+	  			  		%>
  	  			  		   
 	  			  		</table>
 					
@@ -499,6 +515,7 @@
                         -->	
 				<div id="RegistrationData">
 					<table class="table table-striped table table-bordered ">
+					<table></table>
 	  			  		    <tr>
 	  			  		    	<th>S.No.</th>
 	  			  		    	<th>Database Name</th>

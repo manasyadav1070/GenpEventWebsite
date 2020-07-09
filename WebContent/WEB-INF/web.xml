@@ -61,4 +61,14 @@
     <servlet-name>AdminPageAction</servlet-name>
     <url-pattern>/AdminPageAction</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ContactUsDetails</display-name>
+    <servlet-name>ContactUsDetails</servlet-name>
+    <servlet-class>Action.ContactUsDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactUsDetails</servlet-name>
+    <url-pattern>/ContactUsDetails</url-pattern>
+  </servlet-mapping>
 </web-app>
