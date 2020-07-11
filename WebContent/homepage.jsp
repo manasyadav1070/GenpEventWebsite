@@ -46,7 +46,7 @@ function checkContactUsForm(){
     <div class="ms-right ms-hide-small">
       <a href="#about" class="ms-bar-item ms-button">ABOUT</a>
       <a href="#team" class="ms-bar-item ms-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="event.jsp" class="ms-bar-item ms-button"><i class="fa fa-music"></i> EVENTS</a>
+      <a href="eventdummy.jsp" class="ms-bar-item ms-button"><i class="fa fa-music"></i> EVENTS</a>
       <a href="#contact" class="ms-bar-item ms-button"><i class="fa fa-envelope"></i> CONTACT</a>
       <a href="#contact" class="ms-bar-item ms-button"><i class="fa fa-plus"></i> REGISTER</a>
       <a href="admin_signup.jsp" class="ms-bar-item ms-button"><i class="fa fa-user"></i> ADMIN</a>
@@ -65,7 +65,7 @@ function checkContactUsForm(){
   <a href="javascript:void(0)" onclick="ms_close()" class="ms-bar-item ms-button ms-large ms-padding-16">Close ×</a>
   <a href="#about" onclick="ms_close()" class="ms-bar-item ms-button">ABOUT</a>
   <a href="#team" onclick="ms_close()" class="ms-bar-item ms-button">TEAM</a>
-  <a href="event.jsp" onclick="ms_close()" class="ms-bar-item ms-button">EVENTS</a>
+  <a href="eventdummy.jsp" onclick="ms_close()" class="ms-bar-item ms-button">EVENTS</a>
   <a href="#contact" onclick="ms_close()" class="ms-bar-item ms-button">CONTACT</a>
   <a href="#register" onclick="ms_close()" class="ms-bar-item ms-button">REGISTER</a>
   <a href="admin_signup.jsp" onclick="ms_close()" class="ms-bar-item ms-button">ADMIN</a>
